@@ -232,89 +232,7 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
   .prev, .next,.text {font-size: 11px}
 }
 
-
-	<h4>Health</h4>
-
-
-	<!-- SECOND SLIDESHOW -->
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-h1 {
-	
-	
-/* The Modal (background) */
-.modals {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content*/
-.modal-contents {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-
-/* Caption of Modal Image */
-.captions {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-
-
-/* The Close Button */
-.closes {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.closes:hover,
-.closes:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-
-
-
-</style>
-</head>
-	
-	
-
-	
-	
-	
-	
-	
+//////////////////////////	
 .mySlides1 {display:none}
 
 /* Slideshow2 container */
@@ -471,33 +389,45 @@ h1 {
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
 
-<!-- The Modal -->
-<div id="Modal1" class="modal">
+//////////////////////////	
+<div class="slideshow-container1">
 
-	<!-- Modal Content -->
-	<div class="modal-content">
-    	<span1 class="close" id="close1">&times;</span1>
-    	<p>Add the first link here.</p>
- 	</div>
+<div class="mySlides1 fade1">
+  <div class="numbertext1">1 / 3</div>
+  <img id="myBtn4" src="img/stars.jpg" style="width:100%">
+  <div class="text1">Hey there</div>
+  <div class="summary1">In-depth summary</div>
+  <div class="hashtag1">#hashtag</div>
 </div>
 
-<div id="Modal2" class="modal">
-
-	<!-- Modal Content -->
-	<div class="modal-content">
-    	<span2 class="close" id="close2">&times;</span2>
-    	<p>Add the second line here.</p>
- 	</div>
+<div class="mySlides1 fade1">
+  <div class="numbertext1">2 / 3</div>
+  <img id="myBtn5" src="img/stars.jpg" style="width:100%">
+  <div class="text1">Research title</div>
+  <div class="summary1">In-depth summary</div>
+  <div class="hashtag1">#hashtag</div>
 </div>
-<div id="Modal3" class="modal">
 
-	<!-- Modal Content -->
-	<div class="modal-content">
-    	<span3 class="close" id="close3">&times;</span3>
-    	<p>Add the third link here.</p>
- 	</div>
+<div class="mySlides1 fade1">
+  <div class="numbertext1">3 / 3</div>
+  <img id="myBtn6" src="img/stars.jpg" style="width:100%">
+  <div class="text1">Research title</div>
+  <div class="summary1">In-depth summary</div>
+  <div class="hashtag1">#hashtag</div>
 </div>
-	
+
+<a class="prev1" onclick="plusSlides1(-1)">&#10094;</a>
+<a class="next1" onclick="plusSlides1(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot1" onclick="currentSlide1(1)"></span> 
+  <span class="dot1" onclick="currentSlide1(2)"></span> 
+  <span class="dot1" onclick="currentSlide1(3)"></span> 
+</div>
+
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -525,8 +455,70 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-</script>		
 	
+////////////////////////////////	
+	
+var slideIndex1 = 1;
+showSlides1(slideIndex1);
+
+function plusSlides1(n) {
+  showSlides1(slideIndex1 += n);
+}
+
+function currentSlide1(n) {
+  showSlides1(slideIndex1 = n);
+}
+
+function showSlides1(n) {
+  var j;
+  var slides1 = document.getElementsByClassName("mySlides1");
+  var dots1 = document.getElementsByClassName("dot1");
+  if (n > slides1.length) {slideIndex1 = 1}    
+  if (n < 1) {slideIndex1 = slides1.length}
+  for (j = 0; j < slides1.length; j++) {
+      slides1[j].style.display = "none";  
+  }
+  for (j = 0; j < dots1.length; j++) {
+      dots1[j].className = dots1[j].className.replace("active1", "");
+  }
+  slides1[slideIndex1-1].style.display = "block";  
+  dots1[slideIndex1-1].className += "active1";
+}
+
+</script>
+</body>
+</html>
+	
+	
+	
+	
+<!-- The Modal -->
+<div id="Modal1" class="modal">
+
+	<!-- Modal Content -->
+	<div class="modal-content">
+    	<span1 class="close" id="close1">&times;</span1>
+    	<p>Add the first link here.</p>
+ 	</div>
+</div>
+
+<div id="Modal2" class="modal">
+
+	<!-- Modal Content -->
+	<div class="modal-content">
+    	<span2 class="close" id="close2">&times;</span2>
+    	<p>Add the second line here.</p>
+ 	</div>
+</div>
+<div id="Modal3" class="modal">
+
+	<!-- Modal Content -->
+	<div class="modal-content">
+    	<span3 class="close" id="close3">&times;</span3>
+    	<p>Add the third link here.</p>
+ 	</div>
+</div>
+
 <script>
 // Get the modalhttps://www.w3schools.com/howto/img_fjords.jpg
 var modal1 = document.getElementById('Modal1');
@@ -609,46 +601,81 @@ window.onclick = function(event) {
 
 </body>
 </html> 	  
-	  	
+	  
+<!-- SECOND SLIDESHOW -->
+<html>
+<head>
+	<h4>Health</h4>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1 {
+	
+	
+/* The Modal (background) */
+.modals {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
 
-//////////////////////////	
-<div class="slideshow-container1">
+/* Modal Content*/
+.modal-contents {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
 
-<div class="mySlides1 fade1">
-  <div class="numbertext1">1 / 3</div>
-  <img id="myBtn4" src="img/stars.jpg" style="width:100%">
-  <div class="text1">Hey there</div>
-  <div class="summary1">In-depth summary</div>
-  <div class="hashtag1">#hashtag</div>
-</div>
 
-<div class="mySlides1 fade1">
-  <div class="numbertext1">2 / 3</div>
-  <img id="myBtn5" src="img/stars.jpg" style="width:100%">
-  <div class="text1">Research title</div>
-  <div class="summary1">In-depth summary</div>
-  <div class="hashtag1">#hashtag</div>
-</div>
+/* Caption of Modal Image */
+.captions {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
 
-<div class="mySlides1 fade1">
-  <div class="numbertext1">3 / 3</div>
-  <img id="myBtn6" src="img/stars.jpg" style="width:100%">
-  <div class="text1">Research title</div>
-  <div class="summary1">In-depth summary</div>
-  <div class="hashtag1">#hashtag</div>
-</div>
 
-<a class="prev1" onclick="plusSlides1(-1)">&#10094;</a>
-<a class="next1" onclick="plusSlides1(1)">&#10095;</a>
 
-</div>
-<br>
+/* The Close Button */
+.closes {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-<div style="text-align:center">
-  <span class="dot1" onclick="currentSlide1(1)"></span> 
-  <span class="dot1" onclick="currentSlide1(2)"></span> 
-  <span class="dot1" onclick="currentSlide1(3)"></span> 
-</div>
+.closes:hover,
+.closes:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
 
 <!-- The Modal -->
 <div id="Modal4" class="modal">
@@ -676,55 +703,6 @@ window.onclick = function(event) {
     	<p>Add the third link here.</p>
  	</div>
 </div>
-	
-	
-	
-	
-	
-
-////////////////////////////////	
-	
-<script>
-var slideIndex1 = 1;
-showSlides1(slideIndex1);
-
-function plusSlides1(n) {
-  showSlides1(slideIndex1 += n);
-}
-
-function currentSlide1(n) {
-  showSlides1(slideIndex1 = n);
-}
-
-function showSlides1(n) {
-  var j;
-  var slides1 = document.getElementsByClassName("mySlides1");
-  var dots1 = document.getElementsByClassName("dot1");
-  if (n > slides1.length) {slideIndex1 = 1}    
-  if (n < 1) {slideIndex1 = slides1.length}
-  for (j = 0; j < slides1.length; j++) {
-      slides1[j].style.display = "none";  
-  }
-  for (j = 0; j < dots1.length; j++) {
-      dots1[j].className = dots1[j].className.replace("active1", "");
-  }
-  slides1[slideIndex1-1].style.display = "block";  
-  dots1[slideIndex1-1].className += "active1";
-}
-
-</script>
-</body>
-</html>
-	
-	
-	
-	
-
-
-
-<body>
-
-
 
 <script>
 // Get the modalhttps://www.w3schools.com/howto/img_fjords.jpg
