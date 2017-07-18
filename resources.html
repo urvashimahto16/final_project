@@ -599,7 +599,7 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
 
 <div class="Slides fades">
   <div class="numbertexts">1 / 3</div>
-  <img id="myBtn3" src="https://static.pexels.com/photos/510026/pexels-photo-510026.jpeg" style="width:100%">
+  <img id="myBtn4" src="https://static.pexels.com/photos/510026/pexels-photo-510026.jpeg" style="width:100%">
   <div class="texts">Hey there</div>
   <div class="summarys">In-depth summary</div>
   <div class="hashtags">#hashtag</div>
@@ -607,7 +607,7 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
 
 <div class="Slides fades">
   <div class="numbertexts">2 / 3</div>
-  <img id="myBtn4" src="https://static.pexels.com/photos/510026/pexels-photo-510026.jpeg" style="width:100%">
+  <img id="myBtn5" src="https://static.pexels.com/photos/510026/pexels-photo-510026.jpeg" style="width:100%">
   <div class="texts">Research title</div>
   <div class="summarys">In-depth summary</div>
   <div class="hashtags">#hashtag</div>
@@ -615,7 +615,7 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
 
 <div class="Slides fades">
   <div class="numbertexts">3 / 3</div>
-  <img id="myBtn5" src="https://static.pexels.com/photos/510026/pexels-photo-510026.jpeg" style="width:100%">
+  <img id="myBtn6" src="https://static.pexels.com/photos/510026/pexels-photo-510026.jpeg" style="width:100%">
   <div class="texts">Research title</div>
   <div class="summarys">In-depth summary</div>
   <div class="hashtags">#hashtag</div>
@@ -637,8 +637,8 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
 <div id="Modal4" class="modal">
 
 	<!-- Modal Content -->
-	<div class="modal-content">
-    	<span4 class="close" id="close4">&times;</span4>
+	<div class="modal-contents">
+    	<span4 class="closes" id="close4">&times;</span4>
     	<p>Add the first link here.</p>
  	</div>
 </div>
@@ -646,16 +646,16 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
 <div id="Modal5" class="modal">
 
 	<!-- Modal Content -->
-	<div class="modal-content">
-    	<span5 class="close" id="close5">&times;</span5>
+	<div class="modal-contents">
+    	<span5 class="closes" id="close5">&times;</span5>
     	<p>Add the second line here.</p>
  	</div>
 </div>
 <div id="Modal6" class="modal">
 
 	<!-- Modal Content -->
-	<div class="modal-content">
-    	<span6 class="close" id="close6">&times;</span6>
+	<div class="modal-contents">
+    	<span6 class="closes" id="close6">&times;</span6>
     	<p>Add the third link here.</p>
  	</div>
 </div>
@@ -758,10 +758,10 @@ function showSlides(n) {
       slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" actives", "");
+      dots[i].className = dots[i].className.replace("actives", "");
   }
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " actives";
+  dots[slideIndex-1].className += "actives";
 }
 </script>
 
