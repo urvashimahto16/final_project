@@ -15,8 +15,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 </style>
 <body>
-    
-    
+
+
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-padding w3-card-2" style="letter-spacing:4px;">
@@ -37,8 +37,8 @@ h1,h2,h3,h4,h5,h6 {
 	    <br>
 	    <br>
 	    <br>
-	</header>  
-	
+	</header>
+
 <!-- Page content -->
 
 
@@ -49,15 +49,15 @@ h1,h2,h3,h4,h5,h6 {
       <p class="w3-large w3-text-grey w3-hide-medium">Put some statistics about immigrants here.</p>
     </div>
   </div>
-  
+
   <hr>
-	  
-<html>
+
+
 <head>
 	<h4>Education</h4>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-	
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -217,12 +217,12 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -231,7 +231,7 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
   .prev, .next,.text {font-size: 11px}
 }
 
-//////////////////////////	
+//////////////////////////
 .mySlides1 {display:none}
 
 /* Slideshow2 container */
@@ -331,12 +331,12 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -345,7 +345,7 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
   .prev1, .next1,.text1 {font-size: 11px}
 }
 
-	
+
 /* The Modal (background) */
 .modals {
     display: none; /* Hidden by default */
@@ -407,11 +407,11 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
 
 
 
-	
+
 </style>
 </head>
-<body>	
-	
+<body>
+
 
 <div class="slideshow-container">
 
@@ -446,12 +446,12 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
 <br>
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
-//////////////////////////	
+//////////////////////////
 <div class="slideshow-container1">
 
 <div class="mySlides1 fade1">
@@ -485,9 +485,9 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
 <br>
 
 <div style="text-align:center">
-  <span class="dot1" onclick="currentSlide1(1)"></span> 
-  <span class="dot1" onclick="currentSlide1(2)"></span> 
-  <span class="dot1" onclick="currentSlide1(3)"></span> 
+  <span class="dot1" onclick="currentSlide1(1)"></span>
+  <span class="dot1" onclick="currentSlide1(2)"></span>
+  <span class="dot1" onclick="currentSlide1(3)"></span>
 </div>
 
 <script>
@@ -506,20 +506,20 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-	
-////////////////////////////////	
-	
+
+////////////////////////////////
+
 var slideIndex1 = 1;
 showSlides1(slideIndex1);
 
@@ -535,25 +535,24 @@ function showSlides1(n) {
   var j;
   var slides1 = document.getElementsByClassName("mySlides1");
   var dots1 = document.getElementsByClassName("dot1");
-  if (n > slides1.length) {slideIndex1 = 1}    
+  if (n > slides1.length) {slideIndex1 = 1}
   if (n < 1) {slideIndex1 = slides1.length}
   for (j = 0; j < slides1.length; j++) {
-      slides1[j].style.display = "none";  
+      slides1[j].style.display = "none";
   }
   for (j = 0; j < dots1.length; j++) {
       dots1[j].className = dots1[j].className.replace("active1", "");
   }
-  slides1[slideIndex1-1].style.display = "block";  
+  slides1[slideIndex1-1].style.display = "block";
   dots1[slideIndex1-1].className += "active1";
 }
 
 </script>
-</body>
-</html>
-	
-	
-	
-	
+
+
+
+
+
 <!-- The Modal -->
 <div id="Modal1" class="modal">
 
@@ -609,7 +608,7 @@ var span2 = document.getElementById("close2");
 // Get the <span> element that closes the modal
 var span3 = document.getElementById("close3");
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn1.onclick = function() {
     modal1.style.display = "block";
 }
@@ -625,7 +624,7 @@ window.onclick = function(event) {
         modal1.style.display = "none";
     }
 }
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn2.onclick = function() {
     modal2.style.display = "block";
 }
@@ -641,7 +640,7 @@ window.onclick = function(event) {
         modal2.style.display = "none";
     }
 }
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn3.onclick = function() {
     modal3.style.display = "block";
 }
@@ -662,7 +661,7 @@ window.onclick = function(event) {
 </script>
 
 
-<body>
+
 
 
 <!-- The Modal -->
@@ -720,7 +719,7 @@ var span5 = document.getElementById("close5");
 // Get the <span> element that closes the modal
 var span6 = document.getElementById("close6");
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn4.onclick = function() {
     modal4.style.display = "block";
 }
@@ -736,7 +735,7 @@ window.onclick = function(event) {
         modal4.style.display = "none";
     }
 }
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn5.onclick = function() {
     modal5.style.display = "block";
 }
@@ -752,7 +751,7 @@ window.onclick = function(event) {
         modal5.style.display = "none";
     }
 }
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn6.onclick = function() {
     modal6.style.display = "block";
 }
@@ -775,31 +774,31 @@ window.onclick = function(event) {
 
 
 
-	  
+
 <!-- SECOND SLIDESHOW -->
 
 	<h4>Health</h4>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	  
-    
-  
+
+
+
   <!-- Menu Section -->
   <div class="w3-row w3-padding-64" id="menu">
     <div class="w3-col l6 w3-padding-large">
       <h1 class="w3-center">Scholarships</h1><br>
       <h4>Scholarship #1</h4>
       <p class="w3-text-grey">description</p><br>
-    
+
       <h4>Scholarship #2</h4>
       <p class="w3-text-grey">description</p><br>
-    
+
       <h4>Scholarship #3</h4>
-      <p class="w3-text-grey">description</p><br>    
+      <p class="w3-text-grey">description</p><br>
     </div>
   </div>
 
   <hr>
-  
+
 </body>
-</html> 	  
+</html>
