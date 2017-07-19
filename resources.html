@@ -59,20 +59,76 @@ h1,h2,h3,h4,h5,h6 {
 <style>
 
 /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content*/
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
 
 
-//////////////////////////
-.mySlides1 {display:none}
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
 
-/* Slideshow2 container */
-.slideshow-container1 {
+
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+* {box-sizing:border-box}
+body {font-family: "Times New Roman", Georgia, Serif;margin:0}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
 /* Next & previous buttons */
-.prev1, .next1 {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -87,18 +143,18 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* Position the "next button" to the right */
-.next1 {
+.next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev1:hover, .next1:hover {
+.prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
 /* Research title */
-.text1 {
+.text {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -108,7 +164,7 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
 }
 /* Research summary */
-.summary1 {
+.summary {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -118,7 +174,7 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
 }
 /* hashtag */
-.hashtag1 {
+.hashtag {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -128,7 +184,7 @@ h1,h2,h3,h4,h5,h6 {
   text-align: right;
 }
 /* Number text (1/3 etc) */
-.numbertext1 {
+.numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -137,7 +193,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* The dots/bullets/indicators */
-.dot1 {
+.dot {
   cursor:pointer;
   height: 13px;
   width: 13px;
@@ -148,12 +204,12 @@ h1,h2,h3,h4,h5,h6 {
   transition: background-color 0.6s ease;
 }
 
-.active1, .dot1:hover {
+.active, .dot:hover {
   background-color: #717171;
 }
 
 /* Fading animation */
-.fade1 {
+.fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -172,7 +228,121 @@ h1,h2,h3,h4,h5,h6 {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev1, .next1,.text1 {font-size: 11px}
+  .prev, .next,.text {font-size: 11px}
+}
+
+//////////////////////////
+.mySlidesa {display:none}
+
+/* Slideshow2 container */
+.slideshow-containera {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.preva, .nexta {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.nexta {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.preva:hover, .nexta:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Research title */
+.texta {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  text-align: center;
+}
+/* Research summary */
+.summarya {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+}
+/* hashtag */
+.hashtaga {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 125px;
+  width: 100%;
+  text-align: right;
+}
+/* Number text (1/3 etc) */
+.numbertexta {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dota {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activea, .dota:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fadea {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .preva, .nexta,.texta {font-size: 11px}
 }
 
 
@@ -243,78 +413,137 @@ h1,h2,h3,h4,h5,h6 {
 <body>
 
 
+<div class="slideshow-container">
 
-
-	<h4>Health</h4>
-<div class="slideshow-container1">
-
-<div class="mySlides1 fade1">
-  <div class="numbertext1">1 / 3</div>
-  <img id="myBtn4" src="img/stars.jpg" style="width:100%">
-  <div class="text1">Hey there</div>
-  <div class="summary1">In-depth summary</div>
-  <div class="hashtag1">#hashtag</div>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img id="myBtn1" src="img/stars.jpg" style="width:100%">
+  <div class="text">Research title</div>
+  <div class="summary">In-depth summary</div>
+  <div class="hashtag">#hashtag</div>
 </div>
 
-<div class="mySlides1 fade1">
-  <div class="numbertext1">2 / 3</div>
-  <img id="myBtn5" src="img/stars.jpg" style="width:100%">
-  <div class="text1">Research title</div>
-  <div class="summary1">In-depth summary</div>
-  <div class="hashtag1">#hashtag</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img id="myBtn2" src="img/stars.jpg" style="width:100%">
+  <div class="text">Research title</div>
+  <div class="summary">In-depth summary</div>
+  <div class="hashtag">#hashtag</div>
 </div>
 
-<div class="mySlides1 fade1">
-  <div class="numbertext1">3 / 3</div>
-  <img id="myBtn6" src="img/stars.jpg" style="width:100%">
-  <div class="text1">Research title</div>
-  <div class="summary1">In-depth summary</div>
-  <div class="hashtag1">#hashtag</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img id="myBtn3" src="img/stars.jpg" style="width:100%">
+  <div class="text">Research title</div>
+  <div class="summary">In-depth summary</div>
+  <div class="hashtag">#hashtag</div>
 </div>
 
-<a class="prev1" onclick="plusSlides1(-1)">&#10094;</a>
-<a class="next1" onclick="plusSlides1(1)">&#10095;</a>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
 <br>
 
 <div style="text-align:center">
-  <span class="dot1" onclick="currentSlide1(1)"></span>
-  <span class="dot1" onclick="currentSlide1(2)"></span>
-  <span class="dot1" onclick="currentSlide1(3)"></span>
-	  <span class="dot1" onclick="currentSlide1(1)"></span>
-  <span class="dot1" onclick="currentSlide1(2)"></span>
-  <span class="dot1" onclick="currentSlide1(3)"></span>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+	<h4>Health</h4>
+<div class="slideshow-containera">
+
+<div class="mySlidesa fadea">
+  <div class="numbertexta">1 / 3</div>
+  <img id="myBtn4" src="img/stars.jpg" style="width:100%">
+  <div class="texta">Hey there</div>
+  <div class="summarya">In-depth summary</div>
+  <div class="hashtaga">#hashtag</div>
+</div>
+
+<div class="mySlidesa fadea">
+  <div class="numbertexta">2 / 3</div>
+  <img id="myBtn5" src="img/stars.jpg" style="width:100%">
+  <div class="texta">Research title</div>
+  <div class="summarya">In-depth summary</div>
+  <div class="hashtaga">#hashtag</div>
+</div>
+
+<div class="mySlidesa fadea">
+  <div class="numbertexta">3 / 3</div>
+  <img id="myBtn6" src="img/stars.jpg" style="width:100%">
+  <div class="texta">Research title</div>
+  <div class="summarya">In-depth summary</div>
+  <div class="hashtaga">#hashtag</div>
+</div>
+
+<a class="preva" onclick="plusSlidesa(-1)">&#10094;</a>
+<a class="nexta" onclick="plusSlidesa(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dota" onclick="currentSlidea(1)"></span>
+  <span class="dota" onclick="currentSlidea(2)"></span>
+  <span class="dota" onclick="currentSlidea(3)"></span>
 </div>
 
 <script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
-
-var slideIndex1 = 1;
-showSlides1(slideIndex1);
-
-function plusSlides1(n) {
-  showSlides1(slideIndex1 += n);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function currentSlide1(n) {
-  showSlides1(slideIndex1 = n);
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
-function showSlides1(n) {
-  var j;
-  var slides1 = document.getElementsByClassName("mySlides1");
-  var dots1 = document.getElementsByClassName("dot1");
-  if (n > slides1.length) {slideIndex1 = 1}
-  if (n < 1) {slideIndex1 = slides1.length}
-  for (j = 0; j < slides1.length; j++) {
-      slides1[j].style.display = "none";
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
   }
-  for (j = 0; j < dots1.length; j++) {
-      dots1[j].className = dots1[j].className.replace("active1", "");
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides1[slideIndex1-1].style.display = "block";
-  dots1[slideIndex1-1].className += "active1";
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+var slideIndexa = 1;
+showSlidesa(slideIndexa);
+
+function plusSlidesa(n) {
+  showSlidesa(slideIndexa += n);
+}
+
+function currentSlidea(n) {
+  showSlidesa(slideIndexa = n);
+}
+
+function showSlidesa(n) {
+  var i;
+  var slidesa = document.getElementsByClassName("mySlidesa");
+  var dotsa = document.getElementsByClassName("dota");
+  if (n > slidesa.length) {slideIndexa = 1}
+  if (n < 1) {slideIndexa = slidesa.length}
+  for (i = 0; i < slidesa.length; i++) {
+      slidesa[i].style.display = "none";
+  }
+  for (i = 0; i < dotsa.length; i++) {
+      dotsa[i].className = dotsa[i].className.replace(" activea", "");
+  }
+  slidesa[slideIndexa-1].style.display = "block";
+  dotsa[slideIndexa-1].className += " activea";
 }
 
 </script>
