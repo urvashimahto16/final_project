@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
+<title>Consonance | Resources</title>
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
- <title>Consonance | Resources</title>
- <link rel="icon" href="\final_project\img\favicon.png" type="image/gif" sizes="64x64">
+  <link rel="icon" href="\final_project\img\favicon.png" type="image/gif" sizes="64x64">
 </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1,h2,h3,h4,h5,h6 {
@@ -84,7 +84,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 /* Caption of Modal Image */
-#caption {
+.caption {
     margin: auto;
     display: block;
     width: 80%;
@@ -403,7 +403,179 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
     cursor: pointer;
 }
 
+/* Slideshow 3 style */
+.mySlidesb {display:none}
 
+/* Slideshow container */
+.slideshow-containerb {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prevb, .nextb {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.nextb {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevb:hover, .nextb:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.textb {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Research summary */
+.summaryb {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+}
+/* hashtag */
+.hashtagb {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 125px;
+  width: 100%;
+  text-align: right;
+}
+
+/* Number text (1/3 etc) */
+.numbertextb {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dotb {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeb, .dotb:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fadeb {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prevb, .nextb,.textb {font-size: 11px}
+}
+
+
+
+/* The Modal B (background) */
+.modalb {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content*/
+.modal-contentb {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+
+/* Caption of Modal Image */
+.captionb {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+
+/* The Close Button */
+.closeb {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closeb:hover,
+.closeb:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 
@@ -489,7 +661,44 @@ body {font-family: "Times New Roman", Georgia, Serif;margin:0}
   <span class="dota" onclick="currentSlidea(2)"></span>
   <span class="dota" onclick="currentSlidea(3)"></span>
 </div>
+<h4>Legal</h4>
+<div class="slideshow-containerb">
 
+<div class="mySlidesa fadeb">
+<div class="numbertextb">1 / 3</div>
+<img id="myBtn7" src="img/stars.jpg" style="width:100%">
+<div class="textb">Hey there</div>
+<div class="summaryb">In-depth summary</div>
+<div class="hashtagb">#hashtag</div>
+</div>
+
+<div class="mySlidesb fadeb">
+<div class="numbertextb">2 / 3</div>
+<img id="myBtn8" src="img/stars.jpg" style="width:100%">
+<div class="textb">Research title</div>
+<div class="summaryb">In-depth summary</div>
+<div class="hashtagb">#hashtag</div>
+</div>
+
+<div class="mySlidesb fadeb">
+<div class="numbertextb">3 / 3</div>
+<img id="myBtn9" src="img/stars.jpg" style="width:100%">
+<div class="textb">Research title</div>
+<div class="summaryb">In-depth summary</div>
+<div class="hashtagb">#hashtag</div>
+</div>
+
+<a class="prevb" onclick="plusSlidesb(-1)">&#10094;</a>
+<a class="nextb" onclick="plusSlidesb(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dotb" onclick="currentSlideb(1)"></span>
+<span class="dotb" onclick="currentSlideb(2)"></span>
+<span class="dotb" onclick="currentSlideb(3)"></span>
+</div>
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -544,6 +753,33 @@ function showSlidesa(n) {
   }
   slidesa[slideIndexa-1].style.display = "block";
   dotsa[slideIndexa-1].className += " activea";
+}
+
+var slideIndexb = 1;
+showSlidesb(slideIndexb);
+
+function plusSlidesb(n) {
+  showSlidesb(slideIndexb += n);
+}
+
+function currentSlideb(n) {
+  showSlidesb(slideIndexb = n);
+}
+
+function showSlidesb(n) {
+  var i;
+  var slidesb = document.getElementsByClassName("mySlidesb");
+  var dotsb = document.getElementsByClassName("dotb");
+  if (n > slidesb.length) {slideIndexb = 1}
+  if (n < 1) {slideIndexb = slidesb.length}
+  for (i = 0; i < slidesb.length; i++) {
+      slidesb[i].style.display = "none";
+  }
+  for (i = 0; i < dotsb.length; i++) {
+      dotsb[i].className = dotsb[i].className.replace(" activeb", "");
+  }
+  slidesb[slideIndexb-1].style.display = "block";
+  dotsb[slideIndexb-1].className += " activeb";
 }
 
 </script>
@@ -767,6 +1003,113 @@ window.onclick = function(event) {
     }
 }
 
+//THE THIRD SLIDESHOW MODAL
+</script>
+
+<!-- The Modal -->
+<div id="Modal7" class="modal">
+
+	<!-- Modal Content -->
+	<div class="modal-contentb">
+    	<span7 class="closeb" id="close7">&times;</span7>
+    	<p>Add the first link here.</p>
+ 	</div>
+</div>
+
+<div id="Modal8" class="modal">
+
+	<!-- Modal Content -->
+	<div class="modal-contentb">
+    	<span8 class="closeb" id="close8">&times;</span8>
+    	<p>Add the second line here.</p>
+ 	</div>
+</div>
+<div id="Modal9" class="modal">
+
+	<!-- Modal Content -->
+	<div class="modal-contentb">
+    	<span9 class="closeb" id="close9">&times;</span9>
+    	<p>Add the third link here.</p>
+ 	</div>
+</div>
+
+<script>
+// Get the modalhttps://www.w3schools.com/howto/img_fjords.jpg
+var modal7 = document.getElementById('Modal7');
+
+// Get the modalhttps://www.w3schools.com/howto/img_fjords.jpg
+var modal8 = document.getElementById('Modal8');
+
+// Get the modalhttps://www.w3schools.com/howto/img_fjords.jpg
+var modal9 = document.getElementById('Modal9');
+
+// Get the button that opens the modal
+var btn7 = document.getElementById("myBtn7");
+
+// Get the button that opens the modal
+var btn8 = document.getElementById("myBtn8");
+
+// Get the button that opens the modal
+var btn9 = document.getElementById("myBtn9");
+
+// Get the <span> element that closes the modal
+var span7 = document.getElementById("close7");
+
+// Get the <span> element that closes the modal
+var span8 = document.getElementById("close8");
+
+// Get the <span> element that closes the modal
+var span9 = document.getElementById("close9");
+
+// When the user clicks the button, open the modal
+btn7.onclick = function() {
+    modal7.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span7.onclick = function() {
+    modal7.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal7.style.display = "none";
+    }
+}
+// When the user clicks the button, open the modal
+btn8.onclick = function() {
+    modal8.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span8.onclick = function() {
+    modal8.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal8.style.display = "none";
+    }
+}
+// When the user clicks the button, open the modal
+btn9.onclick = function() {
+    modal9.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span9.onclick = function() {
+    modal9.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal9.style.display = "none";
+    }
+}
+
 
 </script>
 
@@ -774,7 +1117,6 @@ window.onclick = function(event) {
 
 
 
-<!-- SECOND SLIDESHOW -->
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
